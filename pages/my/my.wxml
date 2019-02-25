@@ -1,0 +1,23 @@
+<!--pages/my/my.wxml-->
+<view class='page'>
+
+
+
+  <cover-view class="tab-bar">
+    <cover-view class="tab-bar-border"></cover-view>
+    <cover-view class="tab-bar-item" data-path="../lost/lost" bindtap="switchTab_lost">
+      <cover-image src='../../images/home.png'></cover-image>
+      <cover-view style="#3cc51f">主页</cover-view>
+    </cover-view>
+    <cover-view class="tab-bar-item" data-path="../post/post" bindtap="redirect_post">
+    <cover-view class='add-tab-bar'>
+      <cover-image class='add-tab-bar-img' src='../../images/plus.png'></cover-image>
+    </cover-view>
+    </cover-view>
+    <cover-view class="tab-bar-item" data-path="../my/my" bindtap="switchTab_my">
+      <cover-image src='../../images/user.png'></cover-image>
+      <cover-view style="#3cc51f">我的</cover-view>
+    </cover-view>
+  </cover-view>
+
+</view>
