@@ -1,1 +1,8 @@
 /* pages/post_cards/post_cards.wxss */
+.page{
+    margin: 0 auto;
+    width: 95%;
+}
+.weui-cells_after-title {
+  top: 50px;
+}

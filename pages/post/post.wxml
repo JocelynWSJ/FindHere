@@ -55,6 +55,16 @@
       </view>
     </view>
 
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-label">联系方式</view>
+        <textarea class="weui-textarea" placeholder="请输入您的手机号、微信、或QQ" style="height: 3.3em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+
+            
+
     <view class="page__bd page__bd_spacing">
       <button class="weui-btn" type="primary">提交</button>
     </view>

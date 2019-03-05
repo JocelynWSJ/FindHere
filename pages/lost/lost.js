@@ -8,54 +8,83 @@ Page({
     inputVal: "",
     list:[
       {
-        list_tool:[
+        list_item:[
           {
             img:"../../images/test/00.png",
-            name:"朋友圈",
-            url:"../moments/moments"
+            name:"失物XX",
+            location:"操场",
+            date:"5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
           }]
       },
       {
-        list_tool:[
+        list_item: [
           {
-            img:"../../images/test/01.png",
-            name:"扫一扫"
-          },
-          {
-            img:"../../images/test/02.png",
-            name:"摇一摇"
-          },
-          {
-            img: "../../images/test/09.png",
-            name: "扫一扫"
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
           }]
       },
       {
-        list_tool:[
-                    // {
-                    //     img:"/image/newFriend.png",
-                    //     name:"附近的人"
-                    // },
+        list_item: [
           {
-            img:"../../images/test/07.png",
-            name:"漂流瓶"
-                    }
-                ]
-            },
-            {
-                list_tool:[
-                    {
-                    img:"../../images/test/06.png",
-                        name:"购物"
-                    },
-                    {
-                      img:"../../images/test/02.png",
-                        name:"游戏"
-                    }
-                ]
-            },
-        ]
-
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
+          }]
+      },
+      {
+        list_item: [
+          {
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
+          }]
+      },
+      {
+        list_item: [
+          {
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
+          }]
+      },
+      {
+        list_item: [
+          {
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact:"微信 5648168"
+          }]
+      },
+      {
+        list_item: [
+          {
+            img: "../../images/test/00.png",
+            name: "失物XX",
+            location: "操场",
+            date: "5/9/2018",
+            time: "10:50",
+            contact: "微信 5648168"
+          }]
+      }
+    ]
   },
   /**
    * 搜索栏
@@ -101,7 +130,7 @@ Page({
     })
   },
   redirect_post: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../post/post',
       success: function (res) { },
       fail: function (res) { },

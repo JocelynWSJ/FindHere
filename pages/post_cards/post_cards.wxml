@@ -1,14 +1,26 @@
 <!--pages/post_cards/post_cards.wxml-->
-<!--pages/post/post.wxml-->
 <view class='page'>
-  <view class="weui-cells__title">物品</view>
+
+  <!--主页切换导航栏-->
+  <cover-view class="navbar">
+    <cover-view class="weui-navbar">
+      <cover-view class="weui-navbar__item">
+        <cover-view class="weui-navbar__title" bindtap="switchTab_post">物品</cover-view>
+      </cover-view>
+      <cover-view class="weui-navbar__item weui-bar__item_on">
+        <cover-view class="weui-navbar__title">校园卡</cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+
+  
   <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell weui-cell_input">
       <view class="weui-cell__hd">
-        <view class="weui-label">物品</view>
+        <view class="weui-label">学生卡卡号</view>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" placeholder="请输入拾获物品" />
+        <input class="weui-input" placeholder="请输入拾获学生卡卡号" />
       </view>
     </view>
 
@@ -42,10 +54,23 @@
         </picker>
       </view>
     </view>
+
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-label">联系方式</view>
+        <textarea class="weui-textarea" placeholder="请输入您的手机号、微信、或QQ" style="height: 3.3em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+
+            
+
+    <view class="page__bd page__bd_spacing">
+      <button class="weui-btn" type="primary">提交</button>
+    </view>
+
   </view>
 
-  <view class="page__bd page__bd_spacing">
-    <button class="weui-btn" type="primary">提交</button>
-  </view>
+  
 
 </view>
