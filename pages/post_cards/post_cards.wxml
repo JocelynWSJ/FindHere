@@ -63,6 +63,8 @@
       </view>
     </view>
 
+    <button type="default" size="mini" bindtap="chooseImage"  wx:if="{{images.length < 3}}">添加图片</button>
+
             
 
     <view class="page__bd page__bd_spacing">

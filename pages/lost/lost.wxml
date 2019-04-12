@@ -4,11 +4,13 @@
   <!--主页切换导航栏-->
   <view class="navbar">
     <view class="weui-navbar">
-      <view class="weui-navbar__item weui-bar__item_on">
-        <view class="weui-navbar__title">寻物</view>
-      </view>
+      
       <view class="weui-navbar__item">
-        <view class="weui-navbar__title" bindtap="to_found">寻主</view>
+        <view class="weui-navbar__title" bindtap="to_found">寻物</view>
+      </view>
+
+      <view class="weui-navbar__item weui-bar__item_on">
+        <view class="weui-navbar__title">寻主</view>
       </view>
     </view>
   </view>
@@ -58,7 +60,7 @@
 
   
   <!--失物列表-->
-  <scroll-view class="lost_list" scroll-y="true"  style="height: 520px">
+  <scroll-view class="lost_list" scroll-y="true"  style="height: 500px">
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__bd">
           <view wx:for="{{list}}" wx:for-item="item">
@@ -73,9 +75,15 @@
                 <view class="weui-media-box__desc">地点： {{i.location}}</view>
                 <view class="weui-media-box__desc">日期： {{i.date}}</view>
                 <view class="weui-media-box__desc">时间： {{i.time}}</view>
+                <view class="weui-media-box__desc">物品详情： {{i.detail}}</view>
                 <view class="weui-media-box__desc">联系方式： {{i.contact}}</view>
               </view>
+
+
+              
+
             </navigator>
+
             <!---->
           </view>
 

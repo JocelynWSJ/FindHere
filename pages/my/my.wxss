@@ -1,4 +1,8 @@
 /* pages/my/my.wxss */
+
+.container {
+  height:20px;
+}
 .tab-bar {
   position: fixed;
   bottom: 0;

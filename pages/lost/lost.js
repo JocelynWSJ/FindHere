@@ -15,76 +15,12 @@ Page({
             location:"操场",
             date:"5/9/2018",
             time: "10:50",
-            contact: "微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
-            contact: "微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
-            contact: "微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
-            contact: "微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
-            contact: "微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
-            contact:"微信 5648168"
-          }]
-      },
-      {
-        list_item: [
-          {
-            img: "../../images/test/00.png",
-            name: "失物XX",
-            location: "操场",
-            date: "5/9/2018",
-            time: "10:50",
+            detail: "红色外衣，内有钥匙",
             contact: "微信 5648168"
           }]
       }
-    ]
+    ],
+    grids: [0, 1, 2, 3, 4, 5, 6, 7, 8]
   },
   /**
    * 搜索栏
@@ -109,6 +45,14 @@ Page({
     this.setData({
       inputVal: e.detail.value
     });
+  },
+  to_found: function () {
+    wx.switchTab({
+      url: '../found/found',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   },
   /**
    * 导航栏页面导航

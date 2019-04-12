@@ -7,7 +7,15 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class='login'>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="请输入学号" />
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="请输入手机号码" />
+    </view>
+    <button>登录</button>
   </view>
+  
 </view>

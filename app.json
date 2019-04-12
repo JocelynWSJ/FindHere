@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/lost/lost",
+    "pages/index/index",
+    "pages/my/my",
     "pages/post/post",
     "pages/post_cards/post_cards",
-    "pages/my/my",
     "pages/found/found",
-    "pages/login/login",
-    "pages/index/index"
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,6 +1,24 @@
 <!--pages/my/my.wxml-->
 <view class='page'>
 
+  <view class="container">
+    
+  </view>
+
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">通知：失物待领</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">校园卡</view>
+        <view class="weui-media-box__desc">您的校园卡，卡号为：XXXXXXXX，已被XX用户拾取，请尽快联系他。</view>
+        <view class="weui-media-box__desc">联系方式：XXXXXXXX</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
 
 
   <cover-view class="tab-bar">
